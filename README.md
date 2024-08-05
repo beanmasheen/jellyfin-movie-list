@@ -1,7 +1,7 @@
 # Jellyfin Movie Name Export
 
 ## Goal of this Project
-The main goal of this script is to use the Jellyfin API to extract the list of movies on the given server.
+The main goal of this script is to use the Jellyfin API to extract the list of movies on the given server. There is also a cleanup script that cleans the data to only include the name, releaste year and quality.
 
 ## Explanation of the script:
 
@@ -18,6 +18,13 @@ The main goal of this script is to use the Jellyfin API to extract the list of m
 
 ### Main Function:
     The main function fetches the movie data and saves it to an Excel file named movies.xlsx.
+
+## Explanation of cleanup script
+
+### Extract the relevant information from the 'Name' column.
+
+### Split the data into separate columns for name, quality, and release date.
+
 
 ## Required libraries:
 **requests** for making API calls.
